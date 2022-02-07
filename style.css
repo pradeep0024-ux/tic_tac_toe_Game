@@ -1,0 +1,109 @@
+@import url('https://fonts.googleapis.com/css2?family=Rowdies&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+}
+header{
+    background-color: rgb(42 96 96);
+    color: white;
+    padding: 10px;
+    height: 36px;
+}
+h1{
+    font-family:'Rowdies', cursive;
+    font-weight: lighter; 
+
+}
+p{
+    padding: 8px;
+    font-family:'Rowdies', cursive;
+    font-size: 22px;
+}
+#main{
+    background-color: #a7d6e8;
+    justify-content: center;
+    display: flex;
+    margin-top: 27px;
+}
+.box-container{
+      display: grid;
+      grid-template-columns:repeat(3, 9vw);
+      grid-template-rows: repeat(3, 9vw);
+      font-family:'Rowdies', cursive;
+}
+.box{
+    border: 2px solid black;
+    font-size: 6vw;
+    display: flex;
+    justify-content: center;
+    cursor: pointer;
+    align-items: center;
+
+}
+.box:hover{
+    background-color: rgb(220, 248, 248);
+}
+.gameinfo{
+    padding: 0 23px;
+    margin: 5px;
+}
+.imgbox img{
+       
+       width: 0;
+       transition: 1s ease-in-out;
+}
+.br-0{
+    border-right: 0;
+}
+.bl-0{
+    border-left: 0;
+}
+.bt-0{
+    border-top: 0;
+}
+.bb-0{
+    border-bottom: 0;
+}
+.info{
+    font-size: 25px;
+}
+#reset{
+    margin: 6px 11px;
+    padding: 5px 12px;
+    background-color: rgb(42 96 96);
+    cursor: pointer;
+    font-family: 'Rowdies', cursive;
+    font-size: 15px;
+    border-radius: 10px;
+    color: white;
+}
+.line{
+    background-color: black;
+    width: 30vw;
+    height: 3px;
+    position: absolute;
+}
+@media screen and (max-width: 800px)
+ {
+     
+    .gameinfo{
+         margin-top: 10px;
+         flex-wrap: wrap;
+     }   
+ }
+ @media screen and (max-width: 950px)
+{
+    .main{
+        flex-wrap: wrap;
+    }
+    .gameinfo{
+        margin-top: 34px;
+    }
+    .gameinfo h1{
+        font-size: 1.5rem;
+    }
+    .box-container { 
+        grid-template-rows: repeat(3, 20vw);
+        grid-template-columns: repeat(3, 20vw);
+    }
+}
